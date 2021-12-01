@@ -172,9 +172,9 @@ function showToDo (toDoItemTextContent) {
     todoItem.textContent = toDoItemTextContent;
 
     toDoList.prepend(ToDoItemContainer);
-    ToDoItemContainer.appendChild(todoCheckBox);
-    ToDoItemContainer.appendChild(todoItem);
-    ToDoItemContainer.appendChild(removeButton);
+    ToDoItemContainer.appendChild(todoCheckBox);//todo checkbox
+    ToDoItemContainer.appendChild(todoItem); //todp items
+    ToDoItemContainer.appendChild(removeButton); //todo X
 
     newToDo.value = "";
 
