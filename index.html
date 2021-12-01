@@ -8,23 +8,103 @@
     <title>Momentum App</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b0e17e7f5a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+
     <div class="main">
-        <span id="time">17:00:00</span>
+        <!-- dispaly time -->
+        <span id="time"></span> 
         <h1>
-            <span id="greeting">Good morning, </span>
+            <!-- display greetings -->
+            <span id="greeting"> </span>
             <span id="name"></span>
         </h1>
-        <h2>What is your main focus for today?</h2>
-        <h2 id="focus">Make Youtube Video</h2>
+        <!-- display main focus -->
+
+        <div id="today">
+            <div id="today_div">
+              <label id="today_focus">What is your main focus today?</label>
+              <p id="alert_message_fortoday"></p>
+              <input type="text" id="today_input" autocomplete="off">
+            </div>
+        </div>
+        
+          <div id="today_checkbox">
+        
+            <div id="today_checkbox_div">
+              <h1>What is your main focus today?<h1>
+              <div id="your_todo">
+            
+              </div>
+            </div>
+        
+        </div>
+        
+        
     </div>
 
-    <div class="quote">
-        <h5 id="content">Quote Content Here</h5>
-        <h6 id="author">Quote Author Here</h6>
+    <div id="weather">
     </div>
+    <div id="location">
+    </div>
+
+
+    <div class="row-qoutes">
+        <div id="quotes">
+            <div id="quotes-display-container"></div>
+            <div id="add-quote-modal">
+                <div id="add-quote-container">
+                    <h1>Add a new quote:</h1>
+                    <span id="close-button">&times;</span>
+                    <textarea name="quote" id="input-quote" ></textarea>
+                    <ul>
+                        <li><button id="clear-button" class="button-quote">Clear</button></li>
+                        <li><button id="add-button" class="button-quote">Add</button></li>
+                        <span id="added-notification"></span>
+                    </ul>
+                    <div id="quotes-list"><h4>Available Quotes:</h4></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- start of row-footer -->
+    <div class="row-footer">
+        <div>
+
+            <a id="todo-button"></a>
+        </div>
+
+        <div>
+
+            <a id="reset-button"></a>
+            <a id="qoutes-button"></a>
+        </div>
+    </div>
+    <!-- end of row-footer -->
+    <div id="todo-container">
+        <h3>To-do List</h3>
+        <span id="close-todo">&times</span>
+        <input type="text" name="newtodo" id="newtodo">
+        <button id="plus-button">&plus;</button>
+        <div id="todo-list"></div>
+    </div>
+
+    
+    <div id="reset-confirmation">
+        <span id="close-reset">&times</span>
+        <span>Are you sure you want to reset to default values?</span>
+        <ul>
+            <li><button id="yes-reset">Yes</button></li>
+            <li><button id="no-reset">No</button></li>
+        </ul>
+
+    </div>
+
+
+</div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
