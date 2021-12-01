@@ -308,10 +308,12 @@ const today_input = idSelector('today_input')
        const today_focus_value = idSelector('today_focus_value')
        let condition = true 
        const icon_complete = idSelector('icon_complete')
+
+    //    todo complete
        icon_complete.addEventListener('click', function () {
          if(condition) {
            today_focus_value.style.textDecoration = "line-through"
-           today_focus_value.style.textDecorationThickness = '10px'
+           today_focus_value.style.textDecorationThickness = '3px'
            today_focus_value.style.textDecorationColor = '#ffff'
            condition = false
          } else {
