@@ -154,6 +154,7 @@ h2{
   width: 100%;
   height: 100%;
   margin: 0;
+  padding-bottom: 52px;
 }
 
 #todo-container {
@@ -427,7 +428,6 @@ h2{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 52px;
 }
 
 #quotes {
